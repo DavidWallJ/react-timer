@@ -21,3 +21,6 @@ module.exports = function (config) {
     }
   });
 };
+
+// npm packages installed to make this work
+// npm install --save-dev karma karma-chrome-launcher karma-mocha karam-mocha-reporter karma-sourcemap-loader karma-webpack mocha expect

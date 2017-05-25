@@ -18,14 +18,14 @@ const NAV = React.createClass({
               {/*this one is IndexLink instead of Link because of the way weather is nested in the routing.  Without doing this the active class stuff doesn't work right*/}
             </li>
             <li>
-              <Link to="/" activeClassName="active-link">About</Link>
+              <Link to="/countdown" activeClassName="active-link">Countdown</Link>
             </li>
           </ul>
         </div>
         <div className="top-bar-right">
           <ul className="menu">
             <li className="menu-text">
-              Created by <a href="#">David J Wall</a>
+              Created by <a href="#">David J. Wall</a>
             </li>
           </ul>
         </div>
