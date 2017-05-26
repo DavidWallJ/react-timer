@@ -1,5 +1,5 @@
-var React = require('react');
-var {Link, IndexLink} = require('react-router');
+import React from 'react';
+import {Link, IndexLink} from 'react-router';
 
 var Navigation = () => {
   return (
@@ -20,7 +20,7 @@ var Navigation = () => {
       <div className="top-bar-right">
         <ul className="menu">
           <li className="menu-text">
-            Created by <a href="http://www.mead.io" target="_blank">Andrew Mead</a>
+            Created by <a href="#" target="_blank">David J. Wall</a>
           </li>
         </ul>
       </div>
