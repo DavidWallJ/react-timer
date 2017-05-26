@@ -1,12 +1,12 @@
-import React, { Component } from 'react';
-import Nav from 'Nav';
+var React = require('react');
+var Navigation = require('Navigation');
 
-const MAIN = (props) => {
+var Main = (props) => {
   return (
     <div>
       <div>
         <div>
-          <Nav/>
+          <Navigation/>
           <p>Main.jsx Rendered</p>
           {props.children}
         </div>
@@ -15,4 +15,4 @@ const MAIN = (props) => {
   );
 }
 
-module.exports = MAIN;
+module.exports = Main;

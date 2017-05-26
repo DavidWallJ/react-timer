@@ -1,11 +1,15 @@
-const webpackConfig = require('./webpack.config');
+var webpackConfig = require('./webpack.config.js');
 
 module.exports = function (config) {
   config.set({
     browsers: ['Chrome'],
     singleRun: true,
     frameworks: ['mocha'],
-    files: ['app/tests/**/*.test.jsx'],
+    files: [
+      'node_modules/jquery/dist/jquery.min.js',
+      'node_modules/foundation-sites/dist/foundation.min.js',
+      'app/tests/**/*.test.jsx'
+    ],
     preprocessors: {
       'app/tests/**/*.test.jsx': ['webpack', 'sourcemap']
     },
@@ -21,6 +25,3 @@ module.exports = function (config) {
     }
   });
 };
-
-// npm packages installed to make this work
-// npm install --save-dev karma karma-chrome-launcher karma-mocha karam-mocha-reporter karma-sourcemap-loader karma-webpack mocha expect

@@ -1,16 +1,9 @@
-/**
- * Created by david on 5/25/17.
- */
-import React, { Component } from 'react';
+var React = require('react');
 
-const TIMER = React.createClass({
+var Timer = React.createClass({
   render: function () {
-    return (
-      <div>
-        <h1 className="text-center page-title">Timer Component</h1>
-      </div>
-    );
+    return <p>Timer.jsx</p>;
   }
 });
 
-module.exports = TIMER;
+module.exports = Timer;
