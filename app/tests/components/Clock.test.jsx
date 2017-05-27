@@ -3,16 +3,8 @@ import ReactDOM from 'react-dom';
 import expect from 'expect';
 import $ from 'jquery';
 import TestUtils from 'react-addons-test-utils';
-import foundation from 'foundation-sites';
 import Clock from 'Clock';
 
-// var React = require('react');
-// var ReactDOM = require('react-dom');
-// var expect = require('expect');
-// var $ = require('jquery');
-// var TestUtils = require('react-addons-test-utils');
-// var foundation = require('foundation-sites');
-// var Clock = require('Clock');
 describe('Clock', () => {
   it('should exist', () => {
     expect(Clock).toExist();
