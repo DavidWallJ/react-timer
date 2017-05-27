@@ -26,21 +26,23 @@ const Countdown = React.createClass({
       }
     }
   },
-  componentWillUpdate: function (nextProps, nextState) {
-
-  },
+  // componentWillUpdate: function (nextProps, nextState) {
+  //
+  // },
   // This is like componentDidUpdate above except you get access to the next props and state
   // check values just before something updates
-  componentWillMount: function () {
-    console.log('componentWillMount');
-  },
+
+  // componentWillMount: function () {
+  //   console.log('componentWillMount');
+  // },
   // with componentWillMount we are getting access before everything has loaded in the DOM
-  componentDidMount: function () {
-    console.log('componentDidMount');
-  },
+
+  // componentDidMount: function () {
+  //   console.log('componentDidMount');
+  // },
   // with componentDidMount you do have access to DOM elements.  Things have rendered.
+
   componentWillUnmount: function () {
-    console.log('componentDidUnmount');
     clearInterval(this.timer);
     this.timer = undefined;
   },
