@@ -14,6 +14,11 @@ const Controls  = React.createClass({
     }
   },
   // onStatusChange is a function that returns a function.  the onClick handlers are a bit different here.  They pass-on the argument value.  The argument value is passed to 'newStatus'.  'newStatus' is saved on the props object.  This is called the currying pattern.
+
+  // componentWillReceiveProps(newProps) {
+  //   console.log('componentWillReceiveProps', newProps.countdownStatus);
+  // },
+
   render: function () {
     const {countdownStatus} = this.props;
     const renderStartStopButton = () => {
