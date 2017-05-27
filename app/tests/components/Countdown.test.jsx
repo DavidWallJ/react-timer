@@ -39,6 +39,31 @@ describe('Countdown', () => {
         // we've added done as a argument and called it here to let mocha know that we are running and asynchronous test
       }, 3000)
     });
+    
+    it('should pause count down on paused status', (done) => {
+        const countdown = TestUtils.renderIntoDocument(<Countdown/>)
+        countdown.handleSetCountdown(3);
+        countdown.handleStatusChange('paused');
 
+        setTimeout(() => {
+            expect(countdown.state.count).toBe(3);
+            expect(countdown.state.countdownStatus).toBe('paused');
+            done();
+            // need to use done for async tests
+        }, 1001);
+    });
+
+    it('should stop count down on paused status', (done) => {
+      const countdown = TestUtils.renderIntoDocument(<Countdown/>)
+      countdown.handleSetCountdown(3);
+      countdown.handleStatusChange('stopped');
+
+      setTimeout(() => {
+        expect(countdown.state.count).toBe(0);
+        expect(countdown.state.countdownStatus).toBe('stopped');
+        done();
+        // need to use done for async tests
+      }, 1001);
+    });
   });
 })
